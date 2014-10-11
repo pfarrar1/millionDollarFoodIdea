@@ -11,15 +11,16 @@
 			    <input type="text" class="form-control" name="restaurantSearch" ng-model="searchResaturant.zipCode" placeholder="Zip Code" required>
 			  </div>
 			</div>
-		  <button type="button" class="btn btn-default pull-right" ng-click="submitRestaurantSearch(searchResaturant.name)">Make it so!</button>
+		  <button type="button" class="btn btn-default pull-right" ng-click="submitRestaurantSearch(searchResaturant)">Make it so!</button>
 		</form>
 	</div>
 
 	<div id="searchResults" class="col-md-10 col-md-offset-1">
-		<div ng-repeat="restaurant in restaurants | filter:searchResaturant">
+		<!-- <div ng-repeat="restaurant in restaurants | filter:searchResaturant">
 			{{restaurant.name}}
-		</div>
-		dkdfkjhs
+		</div> -->
+
+
 	</div>
 
 </div>

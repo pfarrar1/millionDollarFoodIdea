@@ -1,9 +1,9 @@
-millionDollarFoodIdea.controller('searchController', ['$scope', '$http', function($scope, $http) {
+millionDollarFoodIdea.controller('searchController', ['$scope', '$http','dataService', function($scope, $http, dataService) {
 	
 	$scope.greeting = "faskjhasdfjklh";
 
-	$scope.submitRestaurantSearch = function(restaurantName) {
-		alert(restaurantName);
+	$scope.submitRestaurantSearch = function(restaurant) {
+		dataService.get(restaurant);
 	};
 
 
