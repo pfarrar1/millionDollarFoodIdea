@@ -16,11 +16,70 @@
 	</div>
 
 	<div id="searchResults" class="col-md-10 col-md-offset-1">
-		<!-- <div ng-repeat="restaurant in restaurants | filter:searchResaturant">
-			{{restaurant.name}}
-		</div> -->
+
+		<div id="defaultMessage" ng-hide="result.searchCompleted == true">
+			<p class="lead">See how clean your favorite restaurant really is.</p>
+			<p>Search for your favorite restaurant by name and zip code to get a snapshot view of your favorite restaurant.</p>
+			
+		</div>
+
+		<div id="searchResultEntry" ng-if="result.searchCompleted == true">
+			<div class="row">
+				<div class="col-md-12">
+		
+					<h3>{{result.name}}</h3>
+
+					<div id="restaurantMetaData">
+						<address>
+						  795 Folsom Ave, Suite 600<br>
+						  San Francisco, CA {{result.zipcode}}<br>
+						  <abbr title="Phone">P:</abbr> (123) 456-7890
+						</address>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div id="restaurantYelpReview" class="col-md-6" style="padding: 10px">
+					<div>
+						<h4>Yelp Reviews</h4>
+					</div>
+				</div>
+
+				<div id="restaurantYelpReview" class="col-md-6" style="padding: 10px">
+					<div>
+						<h4>Food Inspections Ratings</h4>
+					</div>
+				</div>
+			</div>
+
+			<div id="thirdPartyIntegrations">
+				<!-- Open Table Integration -->
+				<div class="row">
+					<div class="col-md-12">
+						Want to make a reservation?
+					</div>
+				</div>
+
+				<!-- Groupon Integration -->
+				<div class="row">
+					<div class="col-md-12">
+						Need a coupon?
+					</div>
+				</div>
+
+				<!-- GrubHub -->
+				<div class="row">
+					<div class="col-md-12">
+						Want Take out?
+					</div>
+				</div>
+			</div>
 
 
+
+		</div>
 	</div>
 
 </div>
