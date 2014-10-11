@@ -43,6 +43,114 @@ millionDollarFoodIdea.controller('searchController', ['$scope', '$http', functio
 		},
 		{
 			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		}
+		,{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		}
+		,{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		},
+		{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
+		}
+		,{
+			name: 'Hot Dougs',	
+		},
+		{
+			name: 'Kumas',	
+		},
+		{
+			name: "Larry's"
 		}
 	]
 	
