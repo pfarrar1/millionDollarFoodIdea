@@ -1,1 +1,19 @@
-hello from search
+<div ng-controller="searchController">
+
+	<div id="search" class="row well">
+		<form role="form" class="col-md-6 col-md-offset-3">
+		  <div class="form-group">
+		    <label for="restaurantSearch">Search Restaurant</label>
+		    <input type="text" class="form-control" name="restaurantSearch" ng-model="searchResaturant.name" required>
+		  </div>
+		  <button type="button" class="btn btn-default" ng-click="submitRestaurantSearch(searchResaturant.name)">Make it so!</button>
+		</form>
+	</div>
+
+	<div id="searchResults" class="row">
+		<div ng-repeat="restaurant in restaurants | filter:searchResaturant">
+			{{restaurant.name}}
+		</div>
+	</div>
+
+</div>
