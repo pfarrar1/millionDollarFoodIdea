@@ -9,6 +9,7 @@ millionDollarFoodIdea.controller('searchController', ['$scope', '$http', functio
 		  success(function(data, status, headers, config) {
 				console.log('success on the api call');
 		    $scope.result = data;
+		    console.log(data);
 		  }).
 		  error(function(data, status, headers, config) {
 		    console.log('failure on the api call');

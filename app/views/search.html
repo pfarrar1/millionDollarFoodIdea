@@ -31,9 +31,9 @@
 
 					<div id="restaurantMetaData">
 						<address>
-						  795 Folsom Ave, Suite 600<br>
-						  San Francisco, CA {{result.zipcode}}<br>
-						  <abbr title="Phone">P:</abbr> (123) 456-7890
+						  {{result.address1}}, {{result.address2}}<br>
+						  {{result.city}}, {{result.state}} {{result.zipcode}}<br>
+						  <abbr title="Phone">P:</abbr> {{result.phone}}
 						</address>
 
 					</div>
@@ -42,14 +42,23 @@
 			<div class="row">
 
 				<div id="restaurantYelpReview" class="col-md-6" style="padding: 10px">
-					<div>
-						<h4>Yelp Reviews</h4>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h4>Yelp Reviews</h4>
+							<p class="lead">{{result.yelpRating}}</p>
+							<p class="lead">{{result.yelpReviewCount}}</p>
+						</div>
 					</div>
 				</div>
 
 				<div id="restaurantYelpReview" class="col-md-6" style="padding: 10px">
-					<div>
-						<h4>Food Inspections Ratings</h4>
+					<div class="panel panel-default">
+						<div class="panel-body" ng-class="{'bg-success': result.results == 'Pass', 'bg-danger': result.results != 'Pass'}">
+							<h4>Food Inspections Ratings</h4>
+							<p class="lead">{{result.results}}</p>
+							<p class="lead"><strong>{{result.risk}}</strong></p>
+							<div>{{result.inspectionViolations}}</div>
+						</div>
 					</div>
 				</div>
 			</div>
