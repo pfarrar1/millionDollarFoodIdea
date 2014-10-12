@@ -18,9 +18,9 @@
 	<div id="searchResults" class="col-md-10 col-md-offset-1">
 
 		<div id="defaultMessage" ng-hide="result.searchCompleted == true">
-			<p class="lead">See how clean your favorite restaurant really is.</p>
+			<p class="lead">See how clean your favorite Chicago restaurant really is.</p>
 			<p>Search for your favorite restaurant by name and zip code to get a snapshot view of your favorite restaurant.</p>
-			
+		
 		</div>
 
 		<div id="searchResultEntry" ng-if="result.searchCompleted == true">
@@ -33,7 +33,7 @@
 						<address>
 						  {{result.address1}}, {{result.address2}}<br>
 						  {{result.city}}, {{result.state}} {{result.zipcode}}<br>
-						  <abbr title="Phone">P:</abbr> {{result.phone}}
+						  <!-- <abbr title="Phone">P:</abbr> {{result.phone}} -->
 						</address>
 
 					</div>
@@ -45,15 +45,15 @@
 					<div class="panel panel-default">
 						<div class="panel-body">
 							<h4>Yelp Reviews</h4>
-							<p class="lead">{{result.yelpRating}}</p>
-							<p class="lead">{{result.yelpReviewCount}}</p>
+							<p class="lead">Rating: {{result.yelpRating}}</p>
+							<p class="lead"># of Reviews: {{result.yelpReviewCount}}</p>
 						</div>
 					</div>
 				</div>
 
 				<div id="restaurantYelpReview" class="col-md-6" style="padding: 10px">
 					<div class="panel panel-default">
-						<div class="panel-body" ng-class="{'bg-success': result.results == 'Pass', 'bg-danger': result.results != 'Pass'}">
+						<div class="panel-body" ng-class="{'bg-success': result.risk == 'Risk 3 (Low)', 'bg-danger': result.warning == 'Risk 2 (Medium)', 'bg-danger': result.risk == 'Risk 1 (High)'}">
 							<h4>Food Inspections Ratings</h4>
 							<p class="lead">{{result.results}}</p>
 							<p class="lead"><strong>{{result.risk}}</strong></p>
