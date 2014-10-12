@@ -1,4 +1,4 @@
-millionDollarFoodIdea.controller('searchController', ['$scope', '$http' function($scope, $http, dataService) {
+millionDollarFoodIdea.controller('searchController', ['$scope', '$http', function($scope, $http) {
 
 	$scope.submitRestaurantSearch = function(restaurant) {
 
